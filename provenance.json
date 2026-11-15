@@ -1,0 +1,38 @@
+{
+  "name": "claude_r5 H2e",
+  "base": "SomPeer/copperbellows@d481cfc14057e25d5618a76098ecc54343639f30",
+  "ideas_from": [
+    "TiltGilt/VertexLoom@2385ec115ed2d3f42b7edb30ce1222af8e68383c (13-step replan schedule, patch edits on steps 8-13)"
+  ],
+  "local_results_vs_vertexloom": {
+    "judge": "subnet multi-stage judge (judge_service @ 9fd95d9) run locally, DINOv3 embeddings, z-ai/glm-5.3-flash, seeds 42,1,2",
+    "dev16_margin": "+37.5% (per seed +44/+44/+25%)",
+    "holdout16_margin": "+58.3% (per seed +62/+75/+38%)",
+    "validator": "32/32 modules pass miner-reference/validator"
+  },
+  "verbatim_from_base": {
+    ".gitignore": "155cc38063ce7e8acd55604919445f74c19c914d9c5281a86c69c54394ee8055",
+    "main.py": "e58f0af752c126d2f0050915d03a2eee54fb9e2e17a2eae06aea6ebfef8b0313",
+    "miner404/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "miner404/agents.md": "ebceb654e77836069c718e81b7f99679f9f5bd03a09f8683fffb673919896c68",
+    "miner404/budget.py": "b3b0e79890294cfd422f117f52c52cd775ad7891ca7a20c34777f4100bb6e6d1",
+    "miner404/fallback.py": "efd0c5a109f58b30bdbaeedfe23b844bd5dc0f414c8555a69b2192cd97fc629c",
+    "miner404/images.py": "4fbb81bdb94ec250f5700450862ef7e0328d4b9f0e936f0786f2e014aecc463d",
+    "miner404/match.py": "64db29196313f8ab5646dabca02103790724b566a4c926cbfb544b3c7929c753",
+    "miner404/measure_own.py": "fa66ddf1d4df76ebf96aa19544cd763208bae402f856d2c2e998eeee4b6e2b29",
+    "miner404/orient.py": "36b7672a48809f89c315738b06f7cb6edcfcf47c9d7934e0443919e6281ae8c1",
+    "miner404/patch.py": "0bb4eee2469dd2d954bf405ef46e2029a8268001b37cb49f4b95291dc23895cd",
+    "miner404/pricing.json": "c8b1d8069646104994914e75bfd9f3238f2ea8d797e6bac6418f18234df7420a",
+    "miner404/prompts.py": "8fdb48daf4e1105da21c4adab7bcfe696ee7a5f653c271a61d8013452eb48eb3",
+    "requirements.txt": "bc39fe86944efc4eb5adc1cf1d6465d6ff0b15e333b3ac43ae78d7dad2dbfc5a"
+  },
+  "modified_from_base": {
+    "README.md": "9d65b41694b8e22fb90c02d827a918f455c7b80f29c939be30ed26e93f88070c",
+    "miner404/pipeline.py": "944fbf433a6632bfd2463d6146beacbddcf3c1835ae76890784f57d3cfb27e3a",
+    "miner404/tilt.py": "4d62828ee7ab30461bdfae0938cd901298f8639bb8420830eae650ef431e1eb1",
+    "miner404/versions.py": "5556879c3882b15a792ebbf61800bbfed3e20245ae2da0790c7cfd941309f96e"
+  },
+  "new": {
+    "miner404/route.py": "1db6b7a8dd35c5149f1d8ed605d3ceb07ec99c9585c6e3b57398a34c04787740"
+  }
+}
